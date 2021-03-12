@@ -4,7 +4,7 @@ import java.nio.charset.Charset;
 import java.util.Scanner;
 
 public class Application {
-  /** wesh wesh canne a pêche */
+  /** Description */
   public static void main(String[] args) {
     System.out.println("Hello world");
 
