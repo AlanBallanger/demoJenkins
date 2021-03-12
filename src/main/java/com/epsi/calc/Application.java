@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Application {
   /**
-   * This is a simulation of Prof. Knuth's MIX computer.
+   * La classe main quoi.
    */
   public static void main(String[] args) {
     System.out.println("Hello world");
