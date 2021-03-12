@@ -18,7 +18,6 @@ public class Calculator {
   }
 
   public boolean isPair(int a01) {
-    a01 = 8;
     boolean flag = false;
     if (a01 % 2 == 0){
       flag = true;
@@ -27,11 +26,11 @@ public class Calculator {
   }
 
   public boolean isPrime(int a01) {
-    a01 = 29;
-    boolean flag = false;
+    boolean flag = true;
+
     for (int i = 2; i < a01; i++)  {
       if (a01 % i == 0) {
-        flag = true;
+        flag = false;
       }
     }
     return flag;
