@@ -19,22 +19,22 @@ public class CalculatorTest extends TestCase {
 
     @Test
     public void testAdd() {
-        int a = 2;
-        int b = 3;
+        int a01 = 2;
+        int b01 = 3;
 
         Calculator calc = new Calculator();
-        int actual = calc.add(a, b);
+        int actual = calc.add(a01, b01);
 
         assertEquals(5, actual);
     }
 
     @Test
     public void testSub() {
-        int a = 3;
-        int b = 2;
+        int a01 = 3;
+        int b01 = 2;
 
         Calculator calc = new Calculator();
-        int actual = calc.sub(a, b);
+        int actual = calc.sub(a01, b01);
 
         assertEquals(1, actual);
     }

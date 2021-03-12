@@ -1,10 +1,10 @@
 package com.epsi.calc;
 
 public class Calculator {
-    public int add(int a, int b){
-        return a + b;
+    public int add(int a01, int b01){
+        return a01 + b01;
     }
-    public int sub(int a, int b){
-        return a - b;
+    public int sub(int a01, int b01){
+        return a01 - b01;
     }
 }
