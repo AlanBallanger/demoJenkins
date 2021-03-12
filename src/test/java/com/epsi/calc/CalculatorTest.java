@@ -8,34 +8,34 @@ import org.junit.Test;
 
 public class CalculatorTest extends TestCase {
 
-    @Before
-    public void setUp() throws Exception {
-        super.setUp();
-    }
+  @Before
+  public void setUp() throws Exception {
+    super.setUp();
+  }
 
-    @After
-    public void tearDown() throws Exception {
-    }
+  @After
+  public void tearDown() throws Exception {
+  }
 
-    @Test
-    public void testAdd() {
-        int a01 = 2;
-        int b01 = 3;
+  @Test
+  public void testAdd() {
+    int a01 = 2;
+    int b01 = 3;
 
-        Calculator calc = new Calculator();
-        int actual = calc.add(a01, b01);
+    Calculator calc = new Calculator();
+    int actual = calc.add(a01, b01);
 
-        assertEquals(5, actual);
-    }
+    assertEquals(5, actual);
+  }
 
-    @Test
-    public void testSub() {
-        int a01 = 3;
-        int b01 = 2;
+  @Test
+  public void testSub() {
+    int a01 = 3;
+    int b01 = 2;
 
-        Calculator calc = new Calculator();
-        int actual = calc.sub(a01, b01);
+    Calculator calc = new Calculator();
+    int actual = calc.sub(a01, b01);
 
-        assertEquals(1, actual);
-    }
+    assertEquals(1, actual);
+  }
 }
