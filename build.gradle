@@ -3,19 +3,14 @@ plugins{
     id 'idea'
     id 'jacoco'
     id 'checkstyle'
+    id "com.github.spotbugs" version "4.7.0"
 }
 repositories {
     mavenCentral()
 }
 dependencies{
     testCompile 'junit:junit:4.12'
-}
-jacocoTestReport {
-    reports {
-        xml.enabled true
-        html.enabled true
-        csv.enabled true
-    }
+    spotbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.10.1'
 }
 
 def classesJava = "${project.buildDir}/classes/java/main/"
@@ -30,4 +25,7 @@ task checkstyleMain (type: Checkstyle, overwrite: true) {
     exclude '**/gen/**'
     classpath = fileTree(classesJava)
     configFile = file("${rootProject.rootDir}/config/checkstyle/checkstyle.xml")
+}
+spotbugs {
+    ignoreFailures = true
 }
