@@ -29,10 +29,9 @@ public class Calculator {
   public boolean isPrime(int a01) {
     a01 = 29;
     boolean flag = false;
-    for (int i = 2; i <= a01 / 2; ++i) {
+    for (int i = 2; i < a01; i++)  {
       if (a01 % i == 0) {
         flag = true;
-        break;
       }
     }
     return flag;
