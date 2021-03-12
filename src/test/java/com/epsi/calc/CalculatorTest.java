@@ -61,6 +61,7 @@ public class CalculatorTest extends TestCase {
     assertEquals(2, actual);
   }
 
+  /** Function isPair */
   @Test
   public void testIsPair() {
     int a01 = 8;
@@ -71,6 +72,7 @@ public class CalculatorTest extends TestCase {
     assertEquals(true, actual);
   }
 
+  /** Function isPrime */
   @Test
   public void testIsPrime() {
     int a01 = 29;
