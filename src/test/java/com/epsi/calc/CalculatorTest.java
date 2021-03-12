@@ -38,4 +38,46 @@ public class CalculatorTest extends TestCase {
 
     assertEquals(1, actual);
   }
+
+  @Test
+  public void testMul() {
+    int a01 = 3;
+    int b01 = 2;
+
+    Calculator calc = new Calculator();
+    int actual = calc.mul(a01, b01);
+
+    assertEquals(6, actual);
+  }
+
+  @Test
+  public void testDiv() {
+    int a01 = 4;
+    int b01 = 2;
+
+    Calculator calc = new Calculator();
+    int actual = calc.div(a01, b01);
+
+    assertEquals(2, actual);
+  }
+
+  @Test
+  public void testIsPair() {
+    int a01 = 8;
+
+    Calculator calc = new Calculator();
+    boolean actual = calc.isPrime(a01);
+
+    assertEquals(true, actual);
+  }
+
+  @Test
+  public void testIsPrime() {
+    int a01 = 29;
+
+    Calculator calc = new Calculator();
+    boolean actual = calc.isPrime(a01);
+
+    assertEquals(true, actual);
+  }
 }
