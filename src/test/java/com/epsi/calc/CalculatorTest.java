@@ -66,7 +66,7 @@ public class CalculatorTest extends TestCase {
     int a01 = 8;
 
     Calculator calc = new Calculator();
-    boolean actual = calc.isPrime(a01);
+    boolean actual = calc.isPair(a01);
 
     assertEquals(true, actual);
   }
