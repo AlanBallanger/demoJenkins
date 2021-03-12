@@ -17,6 +17,9 @@ public class Calculator {
     return a01 / b01;
   }
 
+  /**
+   * La fonction isPair.
+   */
   public boolean isPair(int a01) {
     boolean flag = false;
     if (a01 % 2 == 0) {
@@ -25,6 +28,9 @@ public class Calculator {
     return flag;
   }
 
+  /**
+   * La fonction isPrime.
+   */
   public boolean isPrime(int a01) {
     boolean flag = true;
 
