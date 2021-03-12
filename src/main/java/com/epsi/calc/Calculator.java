@@ -19,7 +19,7 @@ public class Calculator {
 
   public boolean isPair(int a01) {
     boolean flag = false;
-    if (a01 % 2 == 0){
+    if (a01 % 2 == 0) {
       flag = true;
     }
     return flag;
