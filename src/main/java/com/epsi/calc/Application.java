@@ -4,7 +4,9 @@ import java.nio.charset.Charset;
 import java.util.Scanner;
 
 public class Application {
-  /** Description */
+  /**
+   * This is a simulation of Prof. Knuth's MIX computer.
+   */
   public static void main(String[] args) {
     System.out.println("Hello world");
 
